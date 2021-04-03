@@ -1,4 +1,3 @@
-from math import trunc
 from Graph import Graph
 from Astar import astar_find
 from Parser import Parser
