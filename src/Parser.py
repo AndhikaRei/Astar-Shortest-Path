@@ -1,8 +1,19 @@
+# Import Library
+import math
+
+# Import kodingan sendiri
 from Graph import Node, Graph
 from Haversine import haversine_distance
-import math
+
+# =======================================Class Definition================================================
+"""
+    class Parser adalah class yang digunakan untuk mengekstrak input dari file external
+    menjadi graf
+"""
 class Parser:
     def __init__(self):
+        # Constructor 
+        # Mengisi attribute kelas astar dengan atribute default atau atribute masukan
         self.graph = Graph()
         self.bool_adj = []
         self.list_of_node =[]
@@ -35,6 +46,7 @@ class Parser:
                     self.graph.add_edge(i,j,haversine_distance(self.list_of_node[i],self.list_of_node[j]))
             
     def display_attr(self,bool_adj=False,node=False, graph_adj=False):
+        # Menampilkan data dari file txt dan menampilkan adjacency matriks pada graf
         if bool_adj:
             print("Boolean Adjacency matrix")
             for row in self.bool_adj:
@@ -50,5 +62,5 @@ class Parser:
             print("List of node")
             for node in self.list_of_node:
                 print(node)
-        
+# =====================================================================================================
         
