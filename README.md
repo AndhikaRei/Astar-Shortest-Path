@@ -27,5 +27,5 @@ python -m notebook
     - Pilih "Restart & Run All"   
 
 ## Author
-Gde Anantha Priharsena - 13519026
-Reihan Andhika Putra - 13519043
+1. Gde Anantha Priharsena - 13519026
+2. Reihan Andhika Putra - 13519043
