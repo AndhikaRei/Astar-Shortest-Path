@@ -19,5 +19,7 @@ end_node = graph.find_node(name=end_node_name)
 # print(start_node)
 # print(end_node)
 
-path = astar_find(graph,start_node,end_node)
+path = astar_find(graph,start_node,end_node)[0]
+price = astar_find(graph,start_node,end_node)[1]
 print(graph.transform_path(path))
+print(price)

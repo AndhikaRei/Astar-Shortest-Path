@@ -68,7 +68,7 @@ def astar_find(graph,start,end):
 
         # Jika curr_astar_node yang sekarang merupakan node tujuan maka return pathnya
         if (curr_astar_node==end_astar_node):
-            return curr_astar_node.path[:len(curr_astar_node.path)-1]
+            return [curr_astar_node.path[:len(curr_astar_node.path)-1], curr_astar_node.g]
 
         # Inisialisasi calon Astar_Node yang akan dikunjungi
         astar_candidate = []
@@ -104,6 +104,6 @@ def astar_find(graph,start,end):
             to_visit.append(astar_node)
             
     # Tidak ditemukan path
-    return None
+    return [None,"infinity"]
 
 # =======================================================================================================

@@ -42,9 +42,11 @@ class Parser:
                     print(col,end=(3-len(str(col)))*" ")
                 print()
         if graph_adj:
-            print("Graph adjacency matrix")
+            print()
+            print("Graph weighted adjacency matrix")
             self.graph.display_adj()
         if node:
+            print()
             print("List of node")
             for node in self.list_of_node:
                 print(node)
