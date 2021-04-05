@@ -90,10 +90,17 @@ class Graph():
         
     def display_adj(self):
         # Menampilkan matriks ketetanggaan
+        i = 0
+        print("     ",end="")
+        for node in self.list_of_node:
+            print(node.name,end=(5-len(node.name))*" ")
+        print()
         for row in self.adj:
+            print(self.list_of_node[i].name,end=(5-len(self.list_of_node[i].name))*" ")
             for val in row:
-                print(val,end=(8-len(str(val)))*" ")
+                print(val,end=(5-len(str(val)))*" ")
             print()
+            i = i +1
     
     def transform_path(self,path):
         # Merubah path dari index dengan nama

@@ -8,7 +8,7 @@ from Graph import Node
 # Menghitung jarak antara dua node dengan latitude dan longitude nya menggunakan formula haversine
 def haversine_distance(node1, node2):
     # I.S node 1 dan node 2 adalah objek class Node yang valid
-    # F.S Mengirimkan jarak antara node1 dan node2 dengan satuan meter dibulatkan 3 angka di belakang koma
+    # F.S Mengirimkan jarak antara node1 dan node2 dengan satuan meter dibulatkan 0 angka di belakang koma
     
     # longitude dan latitude dalam derajat
     lon_1 = node1.longitude
@@ -31,7 +31,8 @@ def haversine_distance(node1, node2):
     d = R*c
     
     # Bulatkan angka dibelakang koma
-    return round(d, 3) 
+    return int(d)
+    # round(d, 0) 
 
 
 # ===============================================================================================

@@ -48,11 +48,18 @@ class Parser:
     def display_attr(self,bool_adj=False,node=False, graph_adj=False):
         # Menampilkan data dari file txt dan menampilkan adjacency matriks pada graf
         if bool_adj:
+            i = 0
             print("Boolean Adjacency matrix")
+            print("     ",end="")
+            for node in self.list_of_node:
+                print(node.name,end=(5-len(node.name))*" ")
+            print()
             for row in self.bool_adj:
+                print(self.list_of_node[i].name,end=(5-len(self.list_of_node[i].name))*" ")
                 for col in row:
-                    print(col,end=(3-len(str(col)))*" ")
+                    print(col,end=(5-len(str(col)))*" ")
                 print()
+                i = i +1
         if graph_adj:
             print()
             print("Graph weighted adjacency matrix")
