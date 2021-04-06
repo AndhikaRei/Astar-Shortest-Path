@@ -29,7 +29,7 @@ pip install folium
 
 ## How To Use
 1. Pastikan semua requirements telah di-*install* dan sudah mengunduh/*clone* repository ini
-2. Jalankan Jupyter Notebook di folder utama (tucil3stima)
+2. Jalankan Jupyter Notebook di folder utama (Tucil3_13519026)
 ```bash
 jupyter notebook
 or 
